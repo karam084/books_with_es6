@@ -1,6 +1,7 @@
-import BookList from '../modules/bookList.js';
-import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
+import BookList from './modules/bookList.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
+const time = document.getElementById('time');
 const bList = new BookList();
 const bookTitle = document.getElementById('bookTilte');
 const bookAuthor = document.getElementById('bookAuthor');
