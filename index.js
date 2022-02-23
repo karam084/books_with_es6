@@ -1,5 +1,5 @@
-import BookList from './modules/bookList.js';
-import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+import BookList from '../modules/bookList.js';
+import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
 
 const bList = new BookList();
 const bookTitle = document.getElementById('bookTilte');
@@ -227,6 +227,5 @@ document.addEventListener('DOMContentLoaded', () => {
     bList.Books = JSON.parse(localStorage.getItem('BookList'));
     displayBooks();
   }
+  time.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 });
-
-time.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
