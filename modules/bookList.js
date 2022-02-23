@@ -1,6 +1,6 @@
 import Book from './Book.js';
 
-export default class BookList {
+export default class {
   constructor() {
     this.Books = [];
     if (localStorage.getItem('BookList') !== null) {
@@ -10,11 +10,7 @@ export default class BookList {
 
   AddBook(Title, Author) {
     if (Title !== '' && Author !== '') {
-      const Book = {
-        Title,
-        Author,
-      };
-      this.Books.push(Book);
+      this.Books.push(new Book(Title, Author));
     }
   }
 
