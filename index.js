@@ -11,7 +11,6 @@ const addBook = document.getElementById('addBook');
 const contact = document.getElementById('contact');
 const showAdd = document.getElementById('showAdd');
 const showCon = document.getElementById('showCon');
-const time = document.getElementById('time');
 
 const showBooks = () => {
   showBook.classList.remove('Invisible');
@@ -72,13 +71,13 @@ const Add = () => {
   }
 };
 
-const Remove = () => {
+function Remove() {
   if (this.id > -1) {
     bList.RemoveBook(this.id);
     localStorage.setItem('BookList', JSON.stringify(bList.Books));
     window.location.reload();
   }
-};
+}
 
 const displayBooks = () => {
   if (bList.Books.length >= 1) {
@@ -93,7 +92,7 @@ const displayBooks = () => {
         col.classList.add('text-left');
         const h5 = document.createElement('h5');
         h5.classList.add('m-2');
-        h5.textContent = `'${el.title}' by ${el.author}`;
+        h5.textContent = `'${el.Title}' by ${el.Author}`;
         col.appendChild(h5);
         const col2 = document.createElement('div');
         col2.classList.add('col-6');
@@ -120,7 +119,7 @@ const displayBooks = () => {
         col.classList.add('text-left');
         const h5 = document.createElement('h5');
         h5.classList.add('m-2');
-        h5.textContent = `'${el.title}' by ${el.author}`;
+        h5.textContent = `'${el.Title}' by ${el.Author}`;
         col.appendChild(h5);
         const col2 = document.createElement('div');
         col2.classList.add('col-6');
@@ -146,7 +145,7 @@ const displayBooks = () => {
         col.classList.add('text-left');
         const h5 = document.createElement('h5');
         h5.classList.add('m-2');
-        h5.textContent = `'${el.title}' by ${el.author}`;
+        h5.textContent = `'${el.Title}' by ${el.Author}`;
         col.appendChild(h5);
         const col2 = document.createElement('div');
         col2.classList.add('col-6');
@@ -172,7 +171,7 @@ const displayBooks = () => {
         col.classList.add('text-left');
         const h5 = document.createElement('h5');
         h5.classList.add('m-2');
-        h5.textContent = `'${el.title}' by ${el.author}`;
+        h5.textContent = `'${el.Title}' by ${el.Author}`;
         col.appendChild(h5);
         const col2 = document.createElement('div');
         col2.classList.add('col-6');
@@ -196,7 +195,7 @@ const displayBooks = () => {
         col.classList.add('text-left');
         const h5 = document.createElement('h5');
         h5.classList.add('m-2');
-        h5.textContent = `'${el.title}' by ${el.author}`;
+        h5.textContent = `'${el.Title}' by ${el.Author}`;
         col.appendChild(h5);
         const col2 = document.createElement('div');
         col2.classList.add('col-6');
@@ -224,8 +223,10 @@ document.addEventListener('DOMContentLoaded', () => {
   showCon.addEventListener('click', showContact);
   showAdd.addEventListener('click', AddShow);
   btnAdd.addEventListener('click', Add);
-  if (bList.Books !== null) {
+  if (localStorage.getItem('BookList') !== null) {
+    bList.Books = JSON.parse(localStorage.getItem('BookList'));
     displayBooks();
   }
-  time.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 });
+
+time.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_MED);

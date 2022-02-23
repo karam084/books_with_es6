@@ -1,4 +1,4 @@
-export default class Book {
+export default class {
   constructor(Title, Author) {
     this.Title = Title;
     this.Author = Author;
