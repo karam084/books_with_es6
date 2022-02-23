@@ -1,0 +1,62 @@
+.titleBook {
+  color: black;
+  font-weight: bold;
+}
+
+.borderT {
+  background-color: grey;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.borderTW {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.borderM {
+  background-color: grey;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.borderMW {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.borderB {
+  background-color: grey;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.borderBW {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.borderNav {
+  border: 2px solid black;
+}
+
+.visible {
+  display: block;
+}
+
+.Invisible {
+  display: none;
+}
+
+.contactUl {
+  margin-left: 800px;
+  margin-right: auto;
+}
+
+.colBlue {
+  color: blue;
+}

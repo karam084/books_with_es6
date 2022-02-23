@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Awsome books</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row borderNav m-2">
+          <div class="col-7">
+            <h1>Awesome Books</h1>
+          </div>
+          <div class="col-5 mt-2">
+            <div class="row">
+              <div class="col-2 text-center">
+                <h3 id="showList" class="colBlue">List</h3>
+              </div>
+              <div class="col-2 text-center">
+                <h3>|</h3>
+              </div>
+              <div class="col-3 text-center">
+                <h3 id="showAdd" >Add new</h3>
+              </div>
+              <div class="col-2 text-center">
+                <h3>|</h3>
+              </div>
+              <div class="col-2 text-center">
+                <h3 id="showCon">Contact</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-2">
+          <div class="col-12 text-end">
+            <h4 id="time">Febuary 9th 2022, 1:43pm</h4>
+          </div>
+        </div>
+        <section id="bookList" class="visible">
+          <div class="row text-center m-2">
+            <h1>All awesome books</h1>
+          </div>
+          <section id="bookSec" class="w-50 mx-auto"></section>
+        </section>
+
+        <section id="addBook" class="w-50 text-center mx-auto Invisible">
+          <h1 class="m-2">Add a new book</h1>
+          <div class="row m-4">
+            <div class="col-12">
+              <input
+                type="text"
+                id="bookTilte"
+                name="Title"
+                required
+                minlength="3"
+                placeholder="Title"
+                size="50"
+              />
+            </div>
+          </div>
+          <div class="row m-4">
+            <div class="col-12">
+              <input
+                type="text"
+                id="bookAuthor"
+                name="Author"
+                required
+                minlength="3"
+                placeholder="Author"
+                size="50"
+              />
+            </div>
+          </div>
+          <div class="row m-2">
+            <div class="col-8"></div>
+            <div class="col-1">
+              <input type="submit" id="Add" value="Add" />
+            </div>
+          </div>
+        </section>
+
+        <section id="contact"  class="Invisible">
+          <div class="row text-center m-2">
+            <h1>Contact Information</h1>
+          </div>
+          <div class="row text-center m-2">
+            <p>Do have any questions or just want to say "Hello"? <br> you can reach put to us!</p>
+          </div>
+          <div class="row  m-4">
+            <ul class="contactUl w-25">
+              <li>Our e-mail: Karam.ezz84@gmail.com</li>
+              <li>Our phone: 01100939334</li>
+              <li>Our address: Streetname 34, 84503 Cairo, Egypt</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="row borderNav p-2 m-2 mt-5">
+        <div class="col-12 text-start">
+          <h4>Copyright</h4>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

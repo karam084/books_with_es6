@@ -1,0 +1,23 @@
+{
+  "name": "awesome_books_es6",
+  "version": "1.0.0",
+  "description": "This project based on the linter configuration. setup project built with html and css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karam084/books_with_es6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karam084/books_with_es6/issues"
+  },
+  "homepage": "https://github.com/karam084/books_with_es6#readme",
+  "dependencies": {
+    "luxon": "^2.3.0"
+  }
+}
